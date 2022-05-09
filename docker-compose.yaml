@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: postgres:11
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: lovelystay_test
+    ports:
+      - "22131:5432"
